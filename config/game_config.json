@@ -1,0 +1,107 @@
+{
+  "game": {
+    "title": "Mike Tyson's Punch-Out!!",
+    "platform": "NES",
+    "emulator": "BizHawk or FCEUX"
+  },
+  "memory_addresses": {
+    "player": {
+      "health": "0x0391",
+      "stamina": "0x0392",
+      "stars": "0x0019",
+      "animation": "0x0380",
+      "position_x": "0x0382",
+      "position_y": "0x0383"
+    },
+    "opponent": {
+      "health": "0x0398",
+      "state": "0x0070",
+      "id": "0x0031",
+      "animation": "0x0390",
+      "attack": "0x0072",
+      "position_x": "0x0392",
+      "position_y": "0x0393"
+    },
+    "game": {
+      "mode": "0x0001",
+      "round": "0x0002",
+      "frame_counter": "0x001A",
+      "timer_minutes": "0x0030",
+      "timer_seconds": "0x0031"
+    }
+  },
+  "opponents": {
+    "0": "Glass Joe",
+    "1": "Von Kaiser",
+    "2": "Piston Honda",
+    "3": "Don Flamenco",
+    "4": "King Hippo",
+    "5": "Great Tiger",
+    "6": "Bald Bull",
+    "7": "Soda Popinski",
+    "8": "Mr. Sandman",
+    "9": "Super Macho Man",
+    "10": "Mike Tyson"
+  },
+  "attack_patterns": {
+    "Glass Joe": {
+      "tells": [
+        "Blinks before jab",
+        "Wind-up animation for hook"
+      ],
+      "vulnerabilities": [
+        "Open to jabs after any attack",
+        "Duck under hooks for star"
+      ]
+    },
+    "Von Kaiser": {
+      "tells": [
+        "Steps back before hook",
+        "Shoulder movement before uppercut"
+      ],
+      "vulnerabilities": [
+        "Counter with jab after dodge",
+        "Star punch opportunity after uppercut"
+      ]
+    },
+    "King Hippo": {
+      "tells": [
+        "Mouth opens before attack",
+        "Taunt animation"
+      ],
+      "vulnerabilities": [
+        "Punch when mouth opens",
+        "Attack exposed belly after he attacks"
+      ]
+    },
+    "Bald Bull": {
+      "tells": [
+        "Bull charge wind-up",
+        "Head movement before hooks"
+      ],
+      "vulnerabilities": [
+        "Jab during bull charge for instant knockdown",
+        "Counter after dodging hooks"
+      ]
+    },
+    "Mike Tyson": {
+      "tells": [
+        "Rapid uppercuts in first round",
+        "Pattern changes after 1:30"
+      ],
+      "vulnerabilities": [
+        "Dodge uppercuts then counter",
+        "Star punch between attack sequences"
+      ]
+    }
+  },
+  "ai_config": {
+    "reaction_time_frames": 5,
+    "aggression_level": 0.5,
+    "learning_enabled": true,
+    "defensive_mode_health_threshold": 50,
+    "stamina_conservation_threshold": 30,
+    "star_punch_priority": true,
+    "pattern_learning_window": 100
+  }
+}

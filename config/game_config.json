@@ -19,8 +19,8 @@
       "id": "0x0031",
       "animation": "0x0390",
       "attack": "0x0072",
-      "position_x": "0x0392",
-      "position_y": "0x0393"
+      "position_x": "0x0396",
+      "position_y": "0x0397"
     },
     "game": {
       "mode": "0x0001",

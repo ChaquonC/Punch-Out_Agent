@@ -6,10 +6,10 @@ Unit tests for Punch-Out AI Agent
 import sys
 import os
 
-# Add parent directory to path
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Add python directory to path for imports
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__))))
 
-from python.punchout_ai import PunchOutAI, GameState, Move, OpponentAttack
+from punchout_ai import PunchOutAI, GameState, Move, OpponentAttack
 
 
 def test_game_state_creation():

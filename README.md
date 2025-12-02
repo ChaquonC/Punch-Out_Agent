@@ -10,4 +10,6 @@
 
 4. run agent of choice
 
-5. start lua script
+5. Add package and core file paths to and env.lua file for the fceux_client to read
+
+6. start lua script
